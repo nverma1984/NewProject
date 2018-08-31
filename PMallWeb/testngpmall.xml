@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FailOverTestSuite">
-  <test thread-count="1" name="FialOverTest">
+  <test thread-count="1" name="FailOverTest">
   <classes>
   <class name="pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001"></class>
   <class name="pMall_TestCases_FailOverTest.FailOver_Login_002"></class>

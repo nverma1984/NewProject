@@ -6,10 +6,15 @@
       <class name="pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001">
         <methods>
           <include name="Login"/>
-          <include name="end"/>
           <include name="init"/>
         </methods>
       </class> <!-- pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001 -->
+      <class name="pMall_TestCases_FailOverTest.FailOver_Login_002">
+        <methods>
+          <include name="Login"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pMall_TestCases_FailOverTest.FailOver_Login_002 -->
     </classes>
   </test> <!-- FialOverTest(failed) -->
 </suite> <!-- Failed suite [FailOverTestSuite] -->

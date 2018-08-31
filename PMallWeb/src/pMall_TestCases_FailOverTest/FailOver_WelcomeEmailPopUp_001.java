@@ -23,7 +23,14 @@ public void init(){
 	public void Login(){
 		Launch_pMallweb();		
 		HomePage HomePage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.HomePage.class);
-		//System.out.println(HomePage1.WEP_Close_Bn.getText());
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		System.out.println(HomePage1.WEP_Close_Bn.getText());
+		
 		HomePage1.WEP_Close_Bn.click();
 		}
 	

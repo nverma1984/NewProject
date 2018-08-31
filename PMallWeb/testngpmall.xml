@@ -3,7 +3,9 @@
 <suite name="FailOverTestSuite">
   <test thread-count="1" name="FialOverTest">
   <classes>
+  <class name="pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001"></class>
   <class name="pMall_TestCases_FailOverTest.FailOver_Login_002"></class>
+  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- FailOverTestSuite -->

@@ -1,4 +1,4 @@
-package pMall_TestCases_FailOverTest;
+package pMall_TestCases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -10,9 +10,8 @@ import pMall_PageObjectRepository.HomePage;
 import pMall_PageObjectRepository.LoginPage;
 
 
-public class FailOver_Login_002 extends BusinessMethods {
+public class Login_002 extends BusinessMethods {
 
-	
 @BeforeClass
 
 public void init(){

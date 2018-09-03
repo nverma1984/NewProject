@@ -1,4 +1,4 @@
-package pMall_TestCases_FailOverTest;
+package pMall_TestCases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -9,9 +9,8 @@ import pMall_Methods.BusinessMethods;
 import pMall_PageObjectRepository.HomePage;
 
 
-public class FailOver_WelcomeEmailPopUp_001 extends BusinessMethods {
+public class WelcomeEmailPopUpValidate_001 extends BusinessMethods {
 
-	
 @BeforeClass
 
 public void init(){

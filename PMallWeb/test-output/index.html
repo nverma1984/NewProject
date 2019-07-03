@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-FailOverTestSuite">
-              <span class="suite-name border-passed">FailOverTestSuite</span>
+            <a href="#" class="navigator-link" panel-name="suite-PMallHealthCheck">
+              <span class="suite-name border-failed">PMallHealthCheck</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-FailOverTestSuite">
-                    <span>C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\FailOversuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-PMallHealthCheck">
+                    <span>C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\PMallHealthCheck.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="testlist-PMallHealthCheck">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="group-PMallHealthCheck">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="times-PMallHealthCheck">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="reporter-PMallHealthCheck">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-PMallHealthCheck">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-FailOverTestSuite">
+                  <a href="#" class="navigator-link " panel-name="chronological-PMallHealthCheck">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-FailOverTestSuite" class="hide-methods passed suite-FailOverTestSuite"> (hide)</a> <!-- hide-methods passed suite-FailOverTestSuite -->
-                      <a href="#" panel-name="suite-FailOverTestSuite" class="show-methods passed suite-FailOverTestSuite"> (show)</a> <!-- show-methods passed suite-FailOverTestSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PMallHealthCheck" class="hide-methods failed suite-PMallHealthCheck"> (hide)</a> <!-- hide-methods failed suite-PMallHealthCheck -->
+                      <a href="#" panel-name="suite-PMallHealthCheck" class="show-methods failed suite-PMallHealthCheck"> (show)</a> <!-- show-methods failed suite-PMallHealthCheck -->
                     </span>
-                    <div class="method-list-content passed suite-FailOverTestSuite">
+                    <div class="method-list-content failed suite-PMallHealthCheck">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FailOverTestSuite" title="pMall_TestCases.Loginn_002" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PMallHealthCheck" title="pMall_TestCases.PlaceOrder" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-FailOverTestSuite -->
+                    </div> <!-- method-list-content failed suite-PMallHealthCheck -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -115,11 +115,11 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-FailOverTestSuite" class="panel FailOverTestSuite">
-          <div class="suite-FailOverTestSuite-class-passed">
+        <div panel-name="suite-PMallHealthCheck" class="panel PMallHealthCheck">
+          <div class="suite-PMallHealthCheck-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pMall_TestCases.Loginn_002</span>
+              <img src="failed.png"/>
+              <span class="class-name">pMall_TestCases.PlaceOrder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -127,32 +127,57 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;WL2781-0044061&apos;, ip: &apos;172.17.9.119&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\NEERAJ~1.VER\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56486}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: cef9b7b11fd02d657664adc62ef7b77d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pMall_Methods.BusinessMethods.Checkout1(BusinessMethods.java:61)
+	at pMall_TestCases.PlaceOrder.Login(PlaceOrder.java:28)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FailOverTestSuite-class-passed -->
-        </div> <!-- panel FailOverTestSuite -->
-        <div panel-name="test-xml-FailOverTestSuite" class="panel">
+          </div> <!-- suite-PMallHealthCheck-class-failed -->
+        </div> <!-- panel PMallHealthCheck -->
+        <div panel-name="test-xml-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\FailOversuite.xml</span>
+            <span class="header-content">C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\PMallHealthCheck.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FailOverTestSuite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PMallHealthCheck&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;FailOverTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pMall_TestCases.Loginn_002&quot;/&gt;
+      &lt;class name=&quot;pMall_TestCases.PlaceOrder&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FailOverTest --&gt;
-&lt;/suite&gt; &lt;!-- FailOverTestSuite --&gt;
+&lt;/suite&gt; &lt;!-- PMallHealthCheck --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-FailOverTestSuite" class="panel">
+        <div panel-name="testlist-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for FailOverTestSuite</span>
+            <span class="header-content">Tests for PMallHealthCheck</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -162,22 +187,22 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-FailOverTestSuite" class="panel">
+        <div panel-name="group-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for FailOverTestSuite</span>
+            <span class="header-content">Groups for PMallHealthCheck</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-FailOverTestSuite" class="panel">
+        <div panel-name="times-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for FailOverTestSuite</span>
+            <span class="header-content">Times for PMallHealthCheck</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_FailOverTestSuite');
-function tableData_FailOverTestSuite() {
+suiteTableInitFunctions.push('tableData_PMallHealthCheck');
+function tableData_PMallHealthCheck() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -186,50 +211,52 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'pMall_TestCases.Loginn_002')
-data.setCell(0, 3, 107861);
-window.suiteTableData['FailOverTestSuite']= { tableData: data, tableDiv: 'times-div-FailOverTestSuite'}
+data.setCell(0, 2, 'pMall_TestCases.PlaceOrder')
+data.setCell(0, 3, 253230);
+window.suiteTableData['PMallHealthCheck']= { tableData: data, tableDiv: 'times-div-PMallHealthCheck'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-FailOverTestSuite">
-              </div> <!-- times-div-FailOverTestSuite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-PMallHealthCheck">
+              </div> <!-- times-div-PMallHealthCheck -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-FailOverTestSuite" class="panel">
+        <div panel-name="reporter-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for FailOverTestSuite</span>
+            <span class="header-content">Reporter output for PMallHealthCheck</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-FailOverTestSuite" class="panel">
+        <div panel-name="ignored-methods-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-FailOverTestSuite" class="panel">
+        <div panel-name="chronological-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pMall_TestCases.Loginn_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pMall_TestCases.PlaceOrder</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">3343 ms</span>
+                <span class="method-start">3353 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">end</span>
-                <span class="method-start">111206 ms</span>
+                <span class="method-start">256586 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

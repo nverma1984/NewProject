@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import pMall_Methods.BusinessMethods;
 import pMall_PageObjectRepository.HomePage;
+import pMall_PageObjectRepository.LoginPage;
 
-
-public class WelcomeEmailPopUpValidate_001 extends BusinessMethods {
+public class PlaceOrder extends BusinessMethods {
 
 @BeforeClass
 
@@ -21,21 +21,23 @@ public void init(){
 	@Test
 	public void Login(){
 		Launch_pMallweb();		
-		HomePage HomePage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.HomePage.class);
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		System.out.println(HomePage1.WEP_Close_Bn.getText());
-		
-		HomePage1.WEP_Close_Bn.click();
-		}
+	    CloseHomePagePopUp();
+	    for(int i =1;i<=5;i++){
+	    LogintoPMall();
+	    AddOrnamentHooktoCart();
+	    Checkout1(i);
+	    }
+	}
 	
 	@AfterClass
 
-	public void end(){		
+	public void end(){
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		closebrowser();
 	}
 	

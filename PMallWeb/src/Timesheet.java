@@ -24,7 +24,6 @@ import org.testng.annotations.Test;
 
 	
 public class Timesheet {
-
 	private static ThreadLocal<WebDriver> localthread = new ThreadLocal<WebDriver>();
 
 @BeforeClass	
@@ -35,7 +34,7 @@ public void beforthemethod(){
 		 public void firsttest(){	    	 
 	    	 Timesheet t1 = new Timesheet();
 	    	 t1.createinstanceofbrowser("Mozilla", "true");
-	    	 t1.login("VBS1226", "Alwaysb+", "http://182.76.79.200/Empower/Login.aspx?IsLogOut=True");
+	    	 t1.login("VBS1226", "Password1", "https://empower.intsof.com");
 	    	 t1.filltimesheet();
 	    	 //System.setProperty("webdriver.gecko.driver", "C:\\Users\\nverma\\Desktop\\Stuff not backed up\\Stuff not backed up\\Softwares\\Drivers\\latest\\geckodriver.exe");
 			 //WebDriver driver=new FirefoxDriver();			 
@@ -61,7 +60,7 @@ public void beforthemethod(){
 	 			
 	 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Resources\\Driver\\geckodriver.exe");
 	 		 driver=new FirefoxDriver();
-	 		this.localthread.set(driver);	
+	 		 this.localthread.set(driver);	
 	 		}
 	 		
 	 		else if(Browser.equalsIgnoreCase("Chrome")){
@@ -168,7 +167,7 @@ public void beforthemethod(){
 	 		e.printStackTrace();
 	 		
 	 	}
-	 		getDriver().navigate().to("http://182.76.79.200/Empower/addnewtimesheetentry.aspx");
+	 		getDriver().navigate().to("https://empower.intsof.com/addnewtimesheetentry.aspx");
 	 		getDriver().findElement(By.id("cphMaster_btnAddNewTimeSheetEntry")).click();
 	 			List<WebElement> li = getDriver().findElements(By.linkText("Edit"));
 	 	int pindex= li.size();

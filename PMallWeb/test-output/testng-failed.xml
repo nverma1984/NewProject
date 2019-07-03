@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FailOverTestSuite]">
-  <test name="FialOverTest(failed)">
+  <test name="FailOverTest(failed)">
     <classes>
-      <class name="pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001">
+      <class name="pMall_TestCases.Loginn_002">
         <methods>
           <include name="Login"/>
+          <include name="end"/>
           <include name="init"/>
         </methods>
-      </class> <!-- pMall_TestCases_FailOverTest.FailOver_WelcomeEmailPopUp_001 -->
-      <class name="pMall_TestCases_FailOverTest.FailOver_Login_002">
-        <methods>
-          <include name="Login"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- pMall_TestCases_FailOverTest.FailOver_Login_002 -->
+      </class> <!-- pMall_TestCases.Loginn_002 -->
     </classes>
-  </test> <!-- FialOverTest(failed) -->
+  </test> <!-- FailOverTest(failed) -->
 </suite> <!-- Failed suite [FailOverTestSuite] -->

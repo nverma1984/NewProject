@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FailOverTestSuite" duration-ms="57322" started-at="2018-09-03T04:55:27Z" finished-at="2018-09-03T04:56:25Z">
+  <suite name="FailOverTestSuite" duration-ms="116215" started-at="2019-07-03T13:04:54Z" finished-at="2019-07-03T13:06:50Z">
     <groups>
     </groups>
-    <test name="FailOverTest" duration-ms="57322" started-at="2018-09-03T04:55:27Z" finished-at="2018-09-03T04:56:25Z">
-      <class name="pMall_TestCases.Login_002">
-        <test-method status="PASS" signature="init()[pri:0, instance:pMall_TestCases.Login_002@5e3a8624]" name="init" is-config="true" duration-ms="5798" started-at="2018-09-03T10:25:50Z" finished-at="2018-09-03T10:25:56Z">
+    <test name="FailOverTest" duration-ms="116215" started-at="2019-07-03T13:04:54Z" finished-at="2019-07-03T13:06:50Z">
+      <class name="pMall_TestCases.Loginn_002">
+        <test-method status="PASS" signature="init()[pri:0, instance:pMall_TestCases.Loginn_002@5e3a8624]" name="init" is-config="true" duration-ms="3333" started-at="2019-07-03T18:34:54Z" finished-at="2019-07-03T18:34:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:pMall_TestCases.Login_002@5e3a8624]" name="Login" duration-ms="22927" started-at="2018-09-03T10:25:56Z" finished-at="2018-09-03T10:26:19Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:pMall_TestCases.Loginn_002@5e3a8624]" name="Login" duration-ms="107861" started-at="2019-07-03T18:34:57Z" finished-at="2019-07-03T18:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="end()[pri:0, instance:pMall_TestCases.Login_002@5e3a8624]" name="end" is-config="true" duration-ms="6024" started-at="2018-09-03T10:26:19Z" finished-at="2018-09-03T10:26:25Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:pMall_TestCases.Loginn_002@5e3a8624]" name="end" is-config="true" duration-ms="5002" started-at="2019-07-03T18:36:45Z" finished-at="2019-07-03T18:36:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- pMall_TestCases.Login_002 -->
-      <class name="pMall_TestCases.WelcomeEmailPopUpValidate_001">
-        <test-method status="PASS" signature="init()[pri:0, instance:pMall_TestCases.WelcomeEmailPopUpValidate_001@1bce4f0a]" name="init" is-config="true" duration-ms="6209" started-at="2018-09-03T10:25:27Z" finished-at="2018-09-03T10:25:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:pMall_TestCases.WelcomeEmailPopUpValidate_001@1bce4f0a]" name="Login" duration-ms="16348" started-at="2018-09-03T10:25:34Z" finished-at="2018-09-03T10:25:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="end()[pri:0, instance:pMall_TestCases.WelcomeEmailPopUpValidate_001@1bce4f0a]" name="end" is-config="true" duration-ms="0" started-at="2018-09-03T10:25:50Z" finished-at="2018-09-03T10:25:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- pMall_TestCases.WelcomeEmailPopUpValidate_001 -->
+      </class> <!-- pMall_TestCases.Loginn_002 -->
     </test> <!-- FailOverTest -->
   </suite> <!-- FailOverTestSuite -->
 </testng-results>

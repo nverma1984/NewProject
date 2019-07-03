@@ -20,7 +20,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.9.0</version>
+			<version>3.9.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -37,6 +37,12 @@
 			<artifactId>poi</artifactId>
 			<version>3.14</version>
 		</dependency>
+		<dependency>
+  <groupId>io.github.bonigarcia</groupId>
+  <artifactId>webdrivermanager</artifactId>
+  <version>3.0.0</version>
+  <scope>test</scope>
+</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>

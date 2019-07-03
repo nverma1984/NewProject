@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Timesheetsuite]">
   <test name="Test(failed)">
     <classes>
-      <class name="FirstClass">
+      <class name="Timesheet">
         <methods>
-          <include name="getDriver"/>
           <include name="firsttest"/>
+          <include name="getDriver"/>
           <include name="beforthemethod"/>
         </methods>
-      </class> <!-- FirstClass -->
+      </class> <!-- Timesheet -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Timesheetsuite] -->

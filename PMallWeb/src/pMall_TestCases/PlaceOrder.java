@@ -22,9 +22,10 @@ public void init(){
 	public void Login(){
 		Launch_pMallweb();		
 	    CloseHomePagePopUp();
-	    for(int i =1;i<=5;i++){
+	    for(int i =5;i<=5;i++){
 	    LogintoPMall();
 	    AddOrnamentHooktoCart();
+	    //AddEmbroideredTravelCaseToCart();
 	    Checkout1(i);
 	    }
 	}

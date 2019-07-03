@@ -51,6 +51,18 @@ ProductPage1.AddtoCartButtonPP.click();
 explicitWait(10);
 }
 
+public void AddEmbroideredTravelCaseToCart(){
+
+driver.navigate().to("https://dev.personalizationmall.com/Mens-Personalized-Travel-Case-p17116.prod?sdest=Search&sdestid=86461114");
+ProductPage ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.ProductPage.class);
+ProductPage1.PersonalizeandAdd2Cart.click();
+explicitWait(10);
+EmbroideredTravelCase embroideredTravelCase1 = PageFactory.initElements(driver,pMall_PageObjectRepository.EmbroideredTravelCase.class);
+embroideredTravelCase1.SelectColor.click();
+embroideredTravelCase1.MonoFirst.sendKeys("F");
+embroideredTravelCase1.MonoSecond.sendKeys("S");
+embroideredTravelCase1.MonoThird.sendKeys("T");
+}
 
 public void Checkout1(int ShipType){
 driver.navigate().to("https://dev.personalizationmall.com/Checkout.aspx");

@@ -7,7 +7,7 @@ import pMall_PageObjectRepository.*;
 
 public class BusinessMethods extends CoreMethods {
 	
-	 String pmall_url = new String("https://dev.personalizationmall.com");
+	 String pmall_url = new String("https://www.personalizationmall.com/");
 	 String Shipping;
 public void Launch_pMallweb(){
 	launchapp(pmall_url);	
@@ -22,7 +22,12 @@ public void CloseHomePagePopUp(){
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
 	}
-	HomePage1.WEP_Close_Bn.click();
+	try {
+		HomePage1.WEP_Close_Bn.click();
+
+	} catch (Exception e) {
+System.out.println("The Homepage pop was not displayed");
+	}
 	HomePage1.SignIn.click();
 }
 
@@ -45,15 +50,18 @@ public void LogintoPMall(){
 
 public void AddOrnamentHooktoCart(){
 
-driver.navigate().to("https://dev.personalizationmall.com/Rotating-Ornament-Hook-p21994.prod?sdest=Search&sdestid=86522747");
+String productpath;
+productpath =  "Rotating-Ornament-Hook-p21994.prod?sdest=Search&sdestid=86522747";
+driver.navigate().to(pmall_url + productpath);
 ProductPage ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.ProductPage.class);
 ProductPage1.AddtoCartButtonPP.click();
 explicitWait(10);
 }
 
 public void AddEmbroideredTravelCaseToCart(){
-
-driver.navigate().to("https://dev.personalizationmall.com/Mens-Personalized-Travel-Case-p17116.prod?sdest=Search&sdestid=86461114");
+String productpath;
+productpath =  "Mens-Personalized-Travel-Case-p17116.prod?sdest=Search&sdestid=86461114";
+driver.navigate().to(pmall_url + productpath);
 ProductPage ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.ProductPage.class);
 ProductPage1.PersonalizeandAdd2Cart.click();
 explicitWait(10);
@@ -65,12 +73,20 @@ embroideredTravelCase1.MonoThird.sendKeys("T");
 }
 
 public void Checkout1(int ShipType){
-driver.navigate().to("https://dev.personalizationmall.com/Checkout.aspx");
+
+String checkoupath = "Checkout.aspx";
+String registerpagepath = "Register.aspx";
+driver.navigate().to(pmall_url + checkoupath);
 ShippingCheckout shippingCheckout1 = PageFactory.initElements(driver,pMall_PageObjectRepository.ShippingCheckout.class);
 shippingCheckout1.SelectShippingAddress1.click();
 explicitWait(10);
 CheckoutPage checkoutPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.CheckoutPage.class);
-checkoutPage1.NoThanks.click();
+try {
+	checkoutPage1.NoThanks.click();
+
+} catch (Exception e) {
+	System.out.println("The banner didn't appear on checkout page");
+}
 explicitWait(3);
 
 
@@ -103,8 +119,12 @@ explicitWait(10);
 OrderConfirmation orderConfirmation1 = PageFactory.initElements(driver,pMall_PageObjectRepository.OrderConfirmation.class);
 
 String ordernumber = orderConfirmation1.OrderNumber.getText();
+
+if (ShipType!=5){
 System.out.println("The order number generated is " + ordernumber + " with Shipping Type: " + Shipping + " Shipping");
-driver.navigate().to("https://dev.personalizationmall.com/Register.aspx");
+}
+else {System.out.println("The order number generated is " + ordernumber + " with Shipping Type: " + Shipping );}
+driver.navigate().to(pmall_url + registerpagepath);
 
 
 }

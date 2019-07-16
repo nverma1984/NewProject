@@ -7,7 +7,7 @@ import pMall_PageObjectRepository.*;
 
 public class BusinessMethods extends CoreMethods {
 	
-	 String pmall_url = new String("https://www.personalizationmall.com/");
+	 String pmall_url = new String("https://dev.personalizationmall.com/");
 	 String Shipping;
 public void Launch_pMallweb(){
 	launchapp(pmall_url);	
@@ -51,7 +51,7 @@ public void LogintoPMall(){
 public void AddOrnamentHooktoCart(){
 
 String productpath;
-productpath =  "Rotating-Ornament-Hook-p21994.prod?sdest=Search&sdestid=86522747";
+productpath =  "Curved-Silver-Christmas-Ornament-Display-Stand-i27242.item?productid=9095";
 driver.navigate().to(pmall_url + productpath);
 ProductPage ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.ProductPage.class);
 ProductPage1.AddtoCartButtonPP.click();

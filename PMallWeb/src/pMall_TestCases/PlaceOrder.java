@@ -25,7 +25,8 @@ public void init(){
 	    for(int i =1;i<=5;i++){
 	    LogintoPMall();
 	    AddOrnamentHooktoCart();
-	    //AddEmbroideredTravelCaseToCart();
+	    AddEmbroideredTravelCaseToCart();
+	    AddOrnamentwith2PhotoToCart();
 	    Checkout1(i);
 	    }
 	}
@@ -39,7 +40,7 @@ public void init(){
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		closebrowser();
+		//closebrowser();
 	}
 	
 }

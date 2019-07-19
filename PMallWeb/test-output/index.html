@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-PMallHealthCheck">
-                    <span>C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\PMallHealthCheck.xml</span>
+                    <span>N:\GitWorkSpace\GitWorkSpace\PMallWeb\PMallHealthCheck.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -127,15 +127,17 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Welcome &apos;]//a[text()= &apos;(Sign In)&apos;]&quot;}
   (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
-System info: host: &apos;WL2781-0044061&apos;, ip: &apos;172.17.9.119&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;VANDNA&apos;, ip: &apos;192.168.43.92&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\NEERAJ~1.VER\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52361}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 575f686cc991136e30f0fe6adefceb6a
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\TUGAYA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:29843}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: d0900f44e57f0e5b8b3a324c7250aa35
+*** Element info: {Using=xpath, value=//div[text()=&apos;Welcome &apos;]//a[text()= &apos;(Sign In)&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -144,13 +146,16 @@ Session ID: 575f686cc991136e30f0fe6adefceb6a
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pMall_Methods.BusinessMethods.AddOrnamentwith2PhotoToCart(BusinessMethods.java:112)
-	at pMall_TestCases.PlaceOrder.Login(PlaceOrder.java:29)
-... Removed 32 stack frames
+	at pMall_Methods.BusinessMethods.CloseHomePagePopUp(BusinessMethods.java:30)
+	at pMall_TestCases.PlaceOrder.Login(PlaceOrder.java:24)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -159,7 +164,7 @@ Session ID: 575f686cc991136e30f0fe6adefceb6a
         </div> <!-- panel PMallHealthCheck -->
         <div panel-name="test-xml-PMallHealthCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Neeraj.Verma\Desktop\Office\Office\Workspace\GitHubRepo\PMallWeb\PMallHealthCheck.xml</span>
+            <span class="header-content">N:\GitWorkSpace\GitWorkSpace\PMallWeb\PMallHealthCheck.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -212,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'pMall_TestCases.PlaceOrder')
-data.setCell(0, 3, 109453);
+data.setCell(0, 3, 36976);
 window.suiteTableData['PMallHealthCheck']= { tableData: data, tableDiv: 'times-div-PMallHealthCheck'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-PMallHealthCheck">
               </div> <!-- times-div-PMallHealthCheck -->
             </div> <!-- times-div -->
@@ -252,11 +257,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">3439 ms</span>
+                <span class="method-start">32864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">end</span>
-                <span class="method-start">112894 ms</span>
+                <span class="method-start">69864 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

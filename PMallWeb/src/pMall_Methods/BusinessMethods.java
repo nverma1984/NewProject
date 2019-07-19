@@ -11,7 +11,7 @@ import pMall_PageObjectRepository.*;
 
 public class BusinessMethods extends CoreMethods {
 	
-	 String pmall_url = new String("https://www.personalizationmall.com/");
+	 String pmall_url = new String("https://dev.personalizationmall.com/");
 	 String Shipping;
 public void Launch_pMallweb(){
 	launchapp(pmall_url);	
@@ -63,7 +63,7 @@ public void AddOrnamentwith2PhotoToCart(){
 	//Navigate to the personalization window
 	CommonPersonalizationcontrols ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.CommonPersonalizationcontrols.class);
 	ProductPage1.PersonalizeandAdd2Cart.click();
-	explicitWait(5);
+	explicitWait(15);
 
 	// Open Personalization window 
 	driver.switchTo().frame("pmallmodaliframe");
@@ -127,7 +127,7 @@ driver.navigate().to(pmall_url + productpath);
 //Navigate to the personalization window
 CommonPersonalizationcontrols ProductPage1 = PageFactory.initElements(driver,pMall_PageObjectRepository.CommonPersonalizationcontrols.class);
 ProductPage1.PersonalizeandAdd2Cart.click();
-explicitWait(5);
+explicitWait(15);
 
 // Open Personalization window 
 driver.switchTo().frame("pmallmodaliframe");

@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pMall_Methods.BusinessMethods;
 import pMall_PageObjectRepository.HomePage;
 import pMall_PageObjectRepository.LoginPage;
+import pMall_PageObjectRepository.ShippingCheckout;
 
 public class PlaceOrder extends BusinessMethods {
 
@@ -22,13 +23,19 @@ public void init(){
 	public void Login(){
 		Launch_pMallweb();		
 	    CloseHomePagePopUp();
-	    for(int i =1;i<=5;i++){
+	    for(int i =1;i<=2;i++){
 	    LogintoPMall();
 	    AddOrnamentHooktoCart();
-	    AddEmbroideredTravelCaseToCart();
-	    AddOrnamentwith2PhotoToCart();
-	    Checkout1(i);
-	    }
+//	    AddEmbroideredTravelCaseToCart();
+//	    AddOrnamentwith2PhotoToCart();
+	    NavigateToCheckoutPage();
+	    SelectShippingAddress();
+	    CloseCheckoutPageBanner();
+	    SelectShipment(i);
+	    EnterCCDetails();
+	    PlaceOrder();
+	    }	     
+	    
 	}
 	
 	@AfterClass

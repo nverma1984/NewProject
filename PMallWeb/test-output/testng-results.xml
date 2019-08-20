@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Timesheetsuite" duration-ms="89137" started-at="2019-07-29T08:26:34Z" finished-at="2019-07-29T08:28:03Z">
+  <suite name="Timesheetsuite" duration-ms="28238" started-at="2019-08-19T11:35:45Z" finished-at="2019-08-19T11:36:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="89137" started-at="2019-07-29T08:26:34Z" finished-at="2019-07-29T08:28:03Z">
+    <test name="Test" duration-ms="28238" started-at="2019-08-19T11:35:45Z" finished-at="2019-08-19T11:36:13Z">
       <class name="Timesheet">
-        <test-method status="PASS" signature="beforthemethod()[pri:0, instance:Timesheet@685cb137]" name="beforthemethod" is-config="true" duration-ms="5" started-at="2019-07-29T13:56:34Z" finished-at="2019-07-29T13:56:34Z">
+        <test-method status="PASS" signature="beforthemethod()[pri:0, instance:Timesheet@685cb137]" name="beforthemethod" is-config="true" duration-ms="16" started-at="2019-08-19T17:05:45Z" finished-at="2019-08-19T17:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforthemethod -->
-        <test-method status="PASS" signature="firsttest()[pri:0, instance:Timesheet@685cb137]" name="firsttest" duration-ms="89123" started-at="2019-07-29T13:56:34Z" finished-at="2019-07-29T13:58:03Z">
+        <test-method status="PASS" signature="firsttest()[pri:0, instance:Timesheet@685cb137]" name="firsttest" duration-ms="28207" started-at="2019-08-19T17:05:45Z" finished-at="2019-08-19T17:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firsttest -->
-        <test-method status="PASS" signature="getDriver()[pri:0, instance:Timesheet@685cb137]" name="getDriver" is-config="true" duration-ms="0" started-at="2019-07-29T13:58:03Z" finished-at="2019-07-29T13:58:03Z">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:Timesheet@685cb137]" name="getDriver" is-config="true" duration-ms="0" started-at="2019-08-19T17:06:13Z" finished-at="2019-08-19T17:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->

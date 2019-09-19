@@ -11,10 +11,10 @@ import pMall_PageObjectRepository.*;
 
 public class BusinessMethods extends CoreMethods {
 	
-	 String pmall_url = new String("https://dev.personalizationmall.com/");
+	 String pmall_url = new String("https://www.personalizationmall.com/");
 	 String Shipping;
 	 String username = new String("neeraj.verma@intsof.com");
-	 String password = new String("Neeraj03#");
+	 String password = new String("Neeraj01#");
 	 int ShipType;
 	 
 //-----------------------Launch PMall Web---------------------------------------//	 
@@ -188,8 +188,8 @@ public void AddOrnamentHooktoCart(){
 	explicitWait(10);
 }
 
-//------------------------------- Ornament with Two Photos -------------------------------------------//
 public void AddOrnamentwith2PhotoToCart(){
+//------------------------------- Ornament with Two Photos -------------------------------------------//
 	
 	String productpath;
 	productpath =  "Personalized-Photo-Christmas-Ornament-2-Sided-i47410.item?productid=16799&sdest=Search&sdestid=86877813";
@@ -239,6 +239,7 @@ public void AddOrnamentwith2PhotoToCart(){
 	
 	//Personalization of other fields	
 	Ornamnetwith2Photos1.AdditionalProductRadioOptionYes.click();
+	Ornamnetwith2Photos1.SecondOptionalProductRadioOptionNo.click();
 	Ornamnetwith2Photos1.GiftBoxRadioYes.click();
 	
 	PreviewProduct();//PerviewProductandAddtoCart

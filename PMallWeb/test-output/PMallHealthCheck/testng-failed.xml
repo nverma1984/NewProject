@@ -5,7 +5,7 @@
     <classes>
       <class name="pMall_TestCases.PlaceOrder">
         <methods>
-          <include name="Login"/>
+          <include name="PlaceanOrder"/>
           <include name="end"/>
           <include name="init"/>
         </methods>

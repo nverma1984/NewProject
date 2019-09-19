@@ -19,7 +19,7 @@ public class CoreMethods {
 //	 driver.manage().window().maximize();
 //     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
-			WebDriverManager.chromedriver().version("74.0").setup();
+			WebDriverManager.chromedriver().version("75.0").setup();
 			driver =new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);

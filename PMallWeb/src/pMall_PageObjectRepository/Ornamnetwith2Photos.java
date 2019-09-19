@@ -23,8 +23,10 @@ public class Ornamnetwith2Photos {
 	@FindBy(xpath= "//input[@id='ctl00_mainContent_pers_pers80100_buttons_0']")
 	public WebElement AdditionalProductRadioOptionYes;
 	
+	@FindBy(xpath= "//input[@id='ctl00_mainContent_pers_pers127880_buttons_1']")
+	public WebElement SecondOptionalProductRadioOptionNo;
 	
-	@FindBy(xpath= "//input[@id='ctl00_mainContent_pers_ctl57_buttons_0']")
+	@FindBy(xpath= "//input[@id='ctl00_mainContent_pers_ctl58_buttons_0']")
 	public WebElement GiftBoxRadioYes;
 	
 	@FindBy(xpath= "//input[@id='checkConfirm']")

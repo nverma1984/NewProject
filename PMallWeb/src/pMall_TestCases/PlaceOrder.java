@@ -18,7 +18,7 @@ public class PlaceOrder extends BusinessMethods {
 
 public void init(){
 	
-	openbrowser();
+	openbrowser("desktop");
 }
 
 	@Test(invocationCount=k)

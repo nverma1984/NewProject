@@ -15,7 +15,7 @@ public class WelcomeEmailPopUpValidate_001 extends BusinessMethods {
 
 public void init(){
 	
-	openbrowser();
+	openbrowser("desktop");
 }
 
 	@Test

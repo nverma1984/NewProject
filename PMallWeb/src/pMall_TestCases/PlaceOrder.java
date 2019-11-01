@@ -2,6 +2,7 @@ package pMall_TestCases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,23 +12,24 @@ import pMall_PageObjectRepository.LoginPage;
 import pMall_PageObjectRepository.ShippingCheckout;
 
 public class PlaceOrder extends BusinessMethods {
+	final int k=2;
 
 @BeforeClass
 
 public void init(){
 	
-	openbrowser();
+	openbrowser("desktop");
 }
 
-	@Test
+	@Test(invocationCount=k)
 	public void PlaceanOrder(){
 		Launch_pMallweb();		
 	    CloseHomePagePopUp();
-	    for(int i =1;i<=2;i++){
+	    for(int i =1;i<=5;i++){
 	    LogintoPMall();
 	    AddOrnamentHooktoCart();
-//	    AddEmbroideredTravelCaseToCart();
-//	    AddOrnamentwith2PhotoToCart();
+        AddEmbroideredTravelCaseToCart();
+        AddOrnamentwith2PhotoToCart();
 	    NavigateToCheckoutPage();
 	    SelectShippingAddress();
 	    CloseCheckoutPageBanner();

@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Timesheetsuite" duration-ms="114501" started-at="2019-10-31T07:07:20Z" finished-at="2019-10-31T07:09:14Z">
     <groups>
     </groups>
@@ -16,6 +17,22 @@
           </reporter-output>
         </test-method> <!-- firsttest -->
         <test-method status="PASS" signature="getDriver()[pri:0, instance:Timesheet@685cb137]" name="getDriver" is-config="true" duration-ms="0" started-at="2019-10-31T12:39:14Z" finished-at="2019-10-31T12:39:14Z">
+=======
+  <suite name="Timesheetsuite" duration-ms="101675" started-at="2019-10-22T07:47:20Z" finished-at="2019-10-22T07:49:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="101675" started-at="2019-10-22T07:47:20Z" finished-at="2019-10-22T07:49:02Z">
+      <class name="Timesheet">
+        <test-method status="PASS" signature="beforthemethod()[pri:0, instance:Timesheet@685cb137]" name="beforthemethod" is-config="true" duration-ms="6" started-at="2019-10-22T13:17:20Z" finished-at="2019-10-22T13:17:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforthemethod -->
+        <test-method status="PASS" signature="firsttest()[pri:0, instance:Timesheet@685cb137]" name="firsttest" duration-ms="101657" started-at="2019-10-22T13:17:20Z" finished-at="2019-10-22T13:19:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firsttest -->
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:Timesheet@685cb137]" name="getDriver" is-config="true" duration-ms="1" started-at="2019-10-22T13:19:02Z" finished-at="2019-10-22T13:19:02Z">
+>>>>>>> QABranch
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->

@@ -6,6 +6,10 @@
       <class name="pMall_TestCases.PlaceOrder">
         <methods>
           <include name="PlaceanOrder"/>
+<<<<<<< HEAD
+=======
+          <include name="end"/>
+>>>>>>> QABranch
           <include name="init"/>
         </methods>
       </class> <!-- pMall_TestCases.PlaceOrder -->
